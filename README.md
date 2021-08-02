@@ -45,7 +45,7 @@ Deliverable 2-
 We analysed and found out who are eligible to mentor new talents by only extracting employees whose DOB is between 1965-01-01' AND '1965-12-31 i.e. employees who would retire first and grouped them by their department so that they are paired with the right candidates with in their department
 
 Query used:
-SELECT distinct on (e.emp_no) e.emp_no, e.first_name, e.last_name, e.birth_date, d.from_date, d.to_date, t.title 
+SELECT distinct on (e.emp_no) e.emp_no, e.first_name, e.last_name, e.birth_date, d.from_date, d.to_date, t.title \
 Into mentorship_eligibility \
 FROM employees AS e \
 JOIN dept_emp as d \
